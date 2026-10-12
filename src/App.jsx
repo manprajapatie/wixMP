@@ -3,15 +3,22 @@ import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import LandingPageLayout from './assets/components/LandingPageLayout'
+import Home from './assets/pages/Home'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <h1 className='m-2 text-3xl font-bold underline'>
-      This is man
-    </h1>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<LandingPageLayout />} >
+            <Route path="/" element={<Home />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
