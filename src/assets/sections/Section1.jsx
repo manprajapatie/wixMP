@@ -1,5 +1,6 @@
 import { MoveRight } from 'lucide-react'
 import React from 'react'
+import AnimatedButton from '../../utils/GetStartBtn'
 
 const Section1 = () => {
     return (
@@ -18,7 +19,8 @@ const Section1 = () => {
                 </p>
 
                 {/* --------------- Get Started Btn -------------- */}
-                <button className="group flex items-center gap-2 bg-black text-white md:text-lg font-medium px-8 py-4 rounded-full shadow-md transition-all duration-200 mb-3 cursor-pointer">
+                <AnimatedButton className='mb-5' />
+                {/* <button className="group flex items-center gap-2 bg-black text-white md:text-lg font-medium px-8 py-4 rounded-full shadow-md transition-all duration-200 mb-3 cursor-pointer">
                     <span>
                         Get Started
                     </span>
@@ -27,7 +29,7 @@ const Section1 = () => {
                     opacity-0 translate-x-4 group-hover:opacity-100 group-hover:translate-x-0'>
                         <MoveRight size={20} />
                     </div>
-                </button>
+                </button> */}
 
                 {/* ------------- btn bottom text ----------- */}
                 <p className="text-xs text-gray-500 mb-16">
@@ -46,7 +48,6 @@ const Section1 = () => {
                         <span className="text-sm text-gray-500 font-medium">Sites created daily</span>
                     </div>
                 </div>
-
             </section>
         </>
     )
